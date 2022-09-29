@@ -7,14 +7,17 @@
     tools:context=".MainActivity"
     android:id="@+id/root_layout">
 
+
     <EditText
+        android:id="@+id/main_edit_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/main_edit_text_view"
-        app:layout_constraintTop_toTopOf="parent"
+
         app:layout_constraintBottom_toTopOf="@id/main_btn_set_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/main_btn_set_text"
@@ -42,7 +45,7 @@
         android:id="@+id/main_show_text_view"
         android:layout_width="150dp"
         android:layout_height="28dp"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:textAlignment="center"
         android:text="Helloworld"
         app:layout_constraintTop_toBottomOf="@id/main_btn_set_text"
