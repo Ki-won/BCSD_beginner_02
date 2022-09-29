@@ -14,10 +14,14 @@ class MainActivity : AppCompatActivity() {
 
         val mainEditText = findViewById<EditText>(R.id.main_edit_text_view)
         val mainTextView = findViewById<TextView>(R.id.main_show_text_view)
-        val mainButtonView = findViewById<Button>(R.id.main_btn_set_text)
+        val mainAddButtonView = findViewById<Button>(R.id.main_btn_set_text)
+        val mainDelateButton = findViewById<Button>(R.id.main_btn_delate_text)
 
-        mainButtonView.setOnClickListener(View.OnClickListener() {
+        mainAddButtonView.setOnClickListener(View.OnClickListener() {
             mainTextView.text = mainEditText.text.toString()
+        })
+        mainDelateButton.setOnClickListener(View.OnClickListener() {
+            mainTextView.text = "초기화"
         })
     }
 }
