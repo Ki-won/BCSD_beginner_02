@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        // 변경사항 추가
         val mainEditText = findViewById<EditText>(R.id.main_edit_text_view)
         val mainTextView = findViewById<TextView>(R.id.main_show_text_view)
         val mainAddButtonView = findViewById<Button>(R.id.main_btn_set_text)
